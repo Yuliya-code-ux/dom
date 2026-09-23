@@ -5,6 +5,7 @@ const strip = [
   SITE.perFloor,
   SITE.areaRange,
   `${SITE.parking} машиномест`,
+  `Сдача — ${SITE.delivery}`,
 ];
 
 export function Facts() {

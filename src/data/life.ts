@@ -61,7 +61,7 @@ export const lifeLayouts: LifeLayout[] = [
       { name: "Спальня", area: 20.9 },
     ],
     shots: [
-      { src: "/images/life/life-119-living.jpg", caption: "У каждого — своё пространство. И есть место, где все вместе" },
+      { src: "/images/life/life-119-living.jpg", caption: "У каждого — своё пространство.\nИ есть место, где все вместе" },
       { src: "/images/life/life-119-dining.jpg", caption: "Место, где собираются все" },
       { src: "/images/life/life-119-master.jpg", caption: "Утро начинается здесь" },
       { src: "/images/life/life-119-kids.jpg", caption: "Пространство для своих" },

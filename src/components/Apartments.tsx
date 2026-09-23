@@ -111,7 +111,7 @@ export function Apartments() {
             </h2>
             <p className="mt-3 max-w-xl text-sm text-muted">
               По чертежу: 22 квартиры, 2–3 на жилом этаже, площади 46,86–186,69 м².
-              Выберите этаж — откроется планировка.
+              Сдача — {SITE.delivery}. Выберите этаж — откроется планировка.
             </p>
           </div>
           <div className="flex gap-2">

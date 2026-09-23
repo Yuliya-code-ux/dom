@@ -21,7 +21,9 @@ export function Life() {
         <div className="max-w-3xl" data-reveal>
           <p className="text-xs tracking-[0.28em] text-sand uppercase">Представьте себя дома</p>
           <h2 className="font-display mt-3 text-4xl text-cream md:text-6xl">
-            Посмотрите, каким может стать ваше пространство на Ворошилова, 75
+            У каждого — своё пространство.
+            <br />
+            И есть место, где все вместе
           </h2>
         </div>
 
@@ -63,7 +65,7 @@ export function Life() {
                 }`}
               />
               {mode === "interior" && (
-                <p className="font-display absolute bottom-5 left-5 max-w-md text-2xl text-cream drop-shadow md:text-3xl">
+                <p className="font-display absolute bottom-5 left-5 max-w-md whitespace-pre-line text-2xl text-cream drop-shadow md:text-3xl">
                   {current.caption}
                 </p>
               )}

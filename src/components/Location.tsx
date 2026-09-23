@@ -1,3 +1,5 @@
+import { SITE } from "../data/site";
+
 export function Location() {
   return (
     <section id="location" className="scroll-mt-24 px-5 py-24 md:px-8 md:py-32">
@@ -17,6 +19,7 @@ export function Location() {
             <li className="border-t border-line pt-3">Участок 1 957 м² · застройка 775,28 м² (39%)</li>
             <li className="border-t border-line pt-3">25 машиномест для жителей, 7 — для коммерции</li>
             <li className="border-t border-line pt-3">9 жилых этажей, 1 подземный · школа в соседнем квартале</li>
+            <li className="border-t border-line pt-3">Сдача — {SITE.delivery}</li>
           </ul>
         </div>
         <div className="grid gap-4" data-reveal>

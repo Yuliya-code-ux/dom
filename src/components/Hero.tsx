@@ -22,6 +22,7 @@ export function Hero() {
         </h1>
         <p className="mt-6 max-w-xl text-base text-cream/80 md:text-lg">
           Современный малоквартирный дом в {SITE.city}е. {SITE.perFloor}, площади {SITE.areaRange}.
+          Сдача — {SITE.delivery}.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <ChooseButton className="rounded-full bg-sand px-7 py-3.5 text-sm tracking-[0.16em] text-ink uppercase transition hover:bg-sand-2" />

@@ -1,3 +1,4 @@
+import { SITE } from "../data/site";
 import { ChooseButton } from "./Cta";
 
 const shots = [
@@ -30,7 +31,7 @@ export function House() {
           <p className="mt-5 text-base leading-relaxed text-muted">
             По чертежу: 9 жилых этажей и 22 квартиры общей площадью 2 441,76 м².
             На типовом этаже две или три квартиры — 46,86–186,69 м². Фасад —
-            кирпич двух оттенков, цоколь из натурального туфа.
+            кирпич двух оттенков, цоколь из натурального туфа. Сдача — {SITE.delivery}.
           </p>
           <ChooseButton className="mt-8 inline-block rounded-full border border-sand/40 px-7 py-3.5 text-sm tracking-[0.16em] text-sand uppercase transition hover:bg-sand hover:text-ink" />
         </div>

@@ -16,6 +16,7 @@ export function Finale() {
           Квартир в доме всего 22.
         </h2>
         <p className="mt-4 text-muted">{SITE.fullAddress}</p>
+        <p className="mt-2 text-sand">Сдача — {SITE.delivery}</p>
         <div className="mt-8 flex flex-wrap gap-3">
           <MaxButton className="rounded-full bg-sand px-7 py-3.5 text-sm tracking-[0.16em] text-ink uppercase hover:bg-sand-2">
             Договориться о встрече

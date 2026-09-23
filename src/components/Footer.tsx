@@ -12,6 +12,7 @@ export function Footer() {
             <p className="font-display text-2xl text-cream">ВОРОШИЛОВА, 75</p>
             <p className="mt-2 text-cream/80">Строящийся многоквартирный жилой дом</p>
             <p className="mt-1">{SITE.fullAddress}</p>
+            <p className="mt-1">Сдача — {SITE.delivery}</p>
           </div>
           <div className="space-y-4">
             <div>
