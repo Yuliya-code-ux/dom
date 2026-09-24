@@ -18,6 +18,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
   useEffect(() => {
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    if (isMobile || reduced) {
+      gsap.set("[data-reveal]", { opacity: 1, y: 0, clearProps: "transform" });
+      return;
+    }
+
     const lenis = new Lenis({
       lerp: 0.08,
     });
@@ -29,18 +37,11 @@ export default function App() {
     gsap.ticker.add(ticker);
     gsap.ticker.lagSmoothing(0);
 
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const isMobile = window.matchMedia("(max-width: 768px)").matches;
-
     const ctx = gsap.context(() => {
-      if (reduced) {
-        gsap.set("[data-reveal]", { opacity: 1, y: 0 });
-        return;
-      }
       gsap.utils.toArray<HTMLElement>("[data-reveal]").forEach((el) => {
         gsap.fromTo(
           el,
-          { opacity: 0, y: isMobile ? 16 : 36 },
+          { opacity: 0, y: 36 },
           {
             opacity: 1,
             y: 0,

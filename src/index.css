@@ -47,9 +47,11 @@ body {
   }
 }
 
-[data-reveal] {
-  opacity: 0;
-  transform: translateY(28px);
+@media (min-width: 769px) {
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(28px);
+  }
 }
 
 .apt-hotspot {

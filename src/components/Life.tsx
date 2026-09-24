@@ -16,7 +16,7 @@ export function Life() {
   }, [layoutId]);
 
   return (
-    <section id="life" className="scroll-mt-24 px-5 py-24 md:px-8 md:py-32">
+    <section id="life" className="scroll-mt-24 px-5 py-16 md:px-8 md:py-32">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-3xl" data-reveal>
           <p className="text-xs tracking-[0.28em] text-sand uppercase">Представьте себя дома</p>
@@ -49,7 +49,7 @@ export function Life() {
 
         <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_280px]" data-reveal>
           <div>
-            <div className="relative aspect-[16/10] overflow-hidden bg-[#ece6dc]">
+            <div className="relative aspect-[4/5] min-h-[58svh] overflow-hidden bg-[#ece6dc] md:aspect-[16/10] md:min-h-0">
               <img
                 src={layout.planImage}
                 alt={`Планировка ${fmtArea(layout.area)} м²`}
@@ -60,16 +60,21 @@ export function Life() {
               <img
                 src={current.src}
                 alt={current.caption}
-                className={`absolute inset-0 h-full w-full object-cover transition duration-700 ${
+                className={`absolute inset-0 h-full w-full object-cover object-center transition duration-700 ${
                   mode === "interior" ? "scale-100 opacity-100" : "scale-[1.04] opacity-0"
                 }`}
               />
               {mode === "interior" && (
-                <p className="font-display absolute bottom-5 left-5 max-w-md whitespace-pre-line text-2xl text-cream drop-shadow md:text-3xl">
+                <p className="font-display absolute bottom-5 left-5 hidden max-w-md whitespace-pre-line text-3xl text-cream drop-shadow md:block">
                   {current.caption}
                 </p>
               )}
             </div>
+            {mode === "interior" && (
+              <p className="font-display mt-3 whitespace-pre-line text-xl leading-snug text-cream md:hidden">
+                {current.caption}
+              </p>
+            )}
 
             <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
               <div className="flex rounded-full border border-line p-1">
